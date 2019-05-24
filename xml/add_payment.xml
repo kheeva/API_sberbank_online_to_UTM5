@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<urfa>
+    <call function="rpcf_add_payment_for_account">
+        <parameter name="account_id" comment="Account ID"/>
+        <parameter name="payment" comment="Payment sum"/>
+        <parameter name="currency_id" value="810"/>
+        <parameter name="payment_date" value="now()"/>
+        <parameter name="burn_date" comment="Payment burn date" />
+        <parameter name="payment_method" comment="Payment method, default cash payment" value="7"/>
+        <parameter name="admin_comment" comment="Comment for administrator, default is empty" value="" />
+        <parameter name="comment" comment="Comment for user, default is empty" value="" />
+        <parameter name="payment_ext_number" comment="Payment external number, default is empty" value=""/>
+        <parameter name="payment_to_invoice" comment="Payment to invoice ID specified, default is zero (no invoice)" value="0" />
+        <parameter name="turn_on_inet" comment="Turn on inet, default is 1" value="1"/>
+    </call>
+</urfa>
